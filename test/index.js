@@ -1,4 +1,6 @@
 fetch('http://frostnibblebot.railway.internal:8080/files/config.json')
-.then(result => console.log(result));
+.then(result => console.log(result))
+.catch(err => console.error(err));
 fetch('http://frostnibblebot.railway.internal:8080/api/public/config.json')
-.then(result => console.log(result));
+.then(result => console.log(result))
+.catch(err => console.error(err));
