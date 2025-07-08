@@ -1,3 +1,2 @@
-let x;
-console.log('testing123456');
-console.log(process.env.x);
+fetch('http://xxxxx.railway.internal:3000/files/config.json')
+.then(result => console.log(result));
