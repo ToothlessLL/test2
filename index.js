@@ -13,7 +13,8 @@ const sql = postgres(
 
 const data = await sql`select * from cluestats`;
 
-fs.writeFile(`${process.env.RAILWAY_VOLUME_MOUNT_PATH}/output.txt`, JSON.stringify(data), 'utf8', (err) => {
+// fs.writeFile(`${process.env.RAILWAY_VOLUME_MOUNT_PATH}/output.txt`, JSON.stringify(data), 'utf8', (err) => {
+fs.writeFile(`/foobar/output.txt`, JSON.stringify(data), 'utf8', (err) => {
     if (err) {
         console.error('Error writing file: ', err);
         return;
