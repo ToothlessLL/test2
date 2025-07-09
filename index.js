@@ -1,4 +1,6 @@
 import postgres from 'postgres';
+import fs from 'fs';
+
 const sql = postgres(
     process.env.DATABASE_URL
     , {
@@ -10,5 +12,13 @@ const sql = postgres(
 )
 
 const data = await sql`select * from cluestats`;
+
+fs.writeFile(`${process.env.RAILWAY_VOLUME_MOUNT_PATH}/output.txt`, JSON.stringify(data), 'utf8', (err) => {
+    if (err) {
+        console.error('Error writing file: ', err);
+        return;
+    }
+    console.log('File written succesfully');
+})
 
 console.log(data);
