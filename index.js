@@ -14,7 +14,7 @@ const sql = postgres(
 
 console.log('dumbo is stiiiiiiiiinky');
 
-const data = await sql`select * from cluestats`;
+const data = await sql`insert into cluestats (easies, created_date) values (10, ${new Date()})`;
 
 // fs.writeFile(`${process.env.RAILWAY_VOLUME_MOUNT_PATH}/output.txt`, JSON.stringify(data), 'utf8', (err) => {
 // // fs.writeFile(path, JSON.stringify(data), 'utf8', (err) => {
@@ -24,14 +24,14 @@ const data = await sql`select * from cluestats`;
 //     }
 //     console.log('File written succesfully');
 // });
-console.log(data);
+// console.log(data);
 
-fs.readFile(path, 'utf8', (err, data) => {
-    if (err) {
-        console.error('Error reading file: ', err);
-        return;
-    }
-    console.log(data);
-});
+// fs.readFile(path, 'utf8', (err, data) => {
+//     if (err) {
+//         console.error('Error reading file: ', err);
+//         return;
+//     }
+//     console.log(data);
+// });
 
-console.log(data);
+// console.log(data);
