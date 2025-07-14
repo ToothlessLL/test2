@@ -12,31 +12,31 @@ const sql = postgres(
     }
 )
 
-// const data = await sql`select * from cluestats`;
-// console.log(data);
+const data = await sql`select * from cluestats where clue_date = ${new Date(1742083200000)}`;
+console.log(data);
 
 
 // await sql`insert into cluestats (easy, clue_date) values (402907, ${new Date(1742083200000)})`;
 // await sql`insert into cluestats (easy, clue_date) values (273772, ${new Date(1742083200000)})`;
-await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (68, 33, 6953, 11559, 3798, ${new Date(1745452800000)}, 30950, 27114, 1044, 179, 261);`;
-await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (2800, 1000, 9000, 11555, 4306, ${new Date(1745452800000)}, 465, 1258, 727, 180, 206);`;
-await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (195, 1433, 12022, 11432, 4257, ${new Date(1745452800000)}, 13525, 824, 469, 182, 210);`;
-await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (2415, 1500, 5743, 11298, 3691, ${new Date(1745452800000)}, 650, 773, 1321, 184, 277);`;
-await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (3259, 414, 9757, 11289, 4341, ${new Date(1745452800000)}, 310, 2371, 652, 185, 201);`;
-await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (1350, 1750, 3347, 11232, 3700, ${new Date(1745452800000)}, 2162, 572, 2515, 186, 274);`;
-await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (1350, 1750, 3347, 11232, 3700, ${new Date(1745452800000)}, 2176, 578, 2516, 187, 275);`;
-await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (135, 416, 2215, 11163, 3080, ${new Date(1745452800000)}, 18427, 2359, 4093, 188, 368);`;
-await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (5, 3, 3856, 11150, 2246, ${new Date(1745452800000)}, 127897, 110947, 2158, 189, 579);`;
-await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (70, 30, 5500, 11150, 4125, ${new Date(1745452800000)}, 30259, 29471, 1398, 190, 226);`;
-await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (0, 2, 4045, 11130, 44, ${new Date(1745452800000)}, 0, 134339, 2016, 191, 34523);`;
-await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (1200, 210, 10000, 11127, 4000, ${new Date(1745452800000)}, 2520, 4246, 622, 192, 245);`;
-await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (3, 5, 1100, 11108, 3487, ${new Date(1745452800000)}, 157313, 90591, 8648, 193, 305);`;
-await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (1, 1, 2801, 11100, 3101, ${new Date(1745452800000)}, 202938, 191444, 3134, 195, 358);`;
-await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (305, 123, 1234, 11094, 3277, ${new Date(1745452800000)}, 8988, 7315, 7734, 196, 338);`;
-await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (0, 0, 407, 11046, 2045, ${new Date(1745452800000)}, 0, 0, 20247, 197, 679);`;
-await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (1500, 1500, 11379, 11000, 4200, ${new Date(1745452800000)}, 1878, 782, 509, 198, 221);`;
-await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (0, 0, 2012, 10931, 3481, ${new Date(1745452800000)}, 0, 0, 4583, 199, 307);`;
-await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (0, 0, 4689, 7850, 4575, ${new Date(1745452800000)}, 0, 0, 1721, 304, 182);`;
+// await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (68, 33, 6953, 11559, 3798, ${new Date(1745452800000)}, 30950, 27114, 1044, 179, 261);`;
+// await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (2800, 1000, 9000, 11555, 4306, ${new Date(1745452800000)}, 465, 1258, 727, 180, 206);`;
+// await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (195, 1433, 12022, 11432, 4257, ${new Date(1745452800000)}, 13525, 824, 469, 182, 210);`;
+// await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (2415, 1500, 5743, 11298, 3691, ${new Date(1745452800000)}, 650, 773, 1321, 184, 277);`;
+// await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (3259, 414, 9757, 11289, 4341, ${new Date(1745452800000)}, 310, 2371, 652, 185, 201);`;
+// await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (1350, 1750, 3347, 11232, 3700, ${new Date(1745452800000)}, 2162, 572, 2515, 186, 274);`;
+// await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (1350, 1750, 3347, 11232, 3700, ${new Date(1745452800000)}, 2176, 578, 2516, 187, 275);`;
+// await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (135, 416, 2215, 11163, 3080, ${new Date(1745452800000)}, 18427, 2359, 4093, 188, 368);`;
+// await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (5, 3, 3856, 11150, 2246, ${new Date(1745452800000)}, 127897, 110947, 2158, 189, 579);`;
+// await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (70, 30, 5500, 11150, 4125, ${new Date(1745452800000)}, 30259, 29471, 1398, 190, 226);`;
+// await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (0, 2, 4045, 11130, 44, ${new Date(1745452800000)}, 0, 134339, 2016, 191, 34523);`;
+// await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (1200, 210, 10000, 11127, 4000, ${new Date(1745452800000)}, 2520, 4246, 622, 192, 245);`;
+// await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (3, 5, 1100, 11108, 3487, ${new Date(1745452800000)}, 157313, 90591, 8648, 193, 305);`;
+// await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (1, 1, 2801, 11100, 3101, ${new Date(1745452800000)}, 202938, 191444, 3134, 195, 358);`;
+// await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (305, 123, 1234, 11094, 3277, ${new Date(1745452800000)}, 8988, 7315, 7734, 196, 338);`;
+// await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (0, 0, 407, 11046, 2045, ${new Date(1745452800000)}, 0, 0, 20247, 197, 679);`;
+// await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (1500, 1500, 11379, 11000, 4200, ${new Date(1745452800000)}, 1878, 782, 509, 198, 221);`;
+// await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (0, 0, 2012, 10931, 3481, ${new Date(1745452800000)}, 0, 0, 4583, 199, 307);`;
+// await sql`insert into cluestats (easy, medium, hard, elite, master, clue_date, easyRank, mediumRank, hardRank, eliteRank, masterRank) values (0, 0, 4689, 7850, 4575, ${new Date(1745452800000)}, 0, 0, 1721, 304, 182);`;
 
 
 
