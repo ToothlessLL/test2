@@ -12,8 +12,12 @@ const sql = postgres(
     }
 )
 
-await sql`insert into cluestats (easy, clue_date) values (402907, ${new Date(1742083200000)})`;
-await sql`insert into cluestats (easy, clue_date) values (273772, ${new Date(1742083200000)})`;
+const data = await sql`select * from cluestats`;
+console.log(data);
+
+
+// await sql`insert into cluestats (easy, clue_date) values (402907, ${new Date(1742083200000)})`;
+// await sql`insert into cluestats (easy, clue_date) values (273772, ${new Date(1742083200000)})`;
 
 
 
