@@ -14,7 +14,9 @@ const sql = postgres(
 
 console.log('dumbo is stiiiiiiiiinky');
 
-const data = await sql`insert into cluestats (easies, created_date) values (10, ${new Date()})`;
+const data = await sql`insert into cluestats (easies, created_date) values (10, ${new Date()});`;
+const returnData = await sql`select * from cluestats where id = 2;`;
+console.log(returnData);
 
 // fs.writeFile(`${process.env.RAILWAY_VOLUME_MOUNT_PATH}/output.txt`, JSON.stringify(data), 'utf8', (err) => {
 // // fs.writeFile(path, JSON.stringify(data), 'utf8', (err) => {
