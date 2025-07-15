@@ -4,15 +4,16 @@
   "main": "index.ts",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-    , "build": "npm install -i"
-    , "start": "node ."
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node ./dist/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "postgres": "^3.4.7"
+    "postgres": "^3.4.7",
+    "typescript": "^5.8.3"
   }
 }
